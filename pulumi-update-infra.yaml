@@ -1,0 +1,9 @@
+steps:
+  - name: pulumi/pulumi-python:3.91.0
+    script: |
+      pip install -r ci_cd_requirements.txt
+      pulumi stack select main --create
+      pulumi up --diff --yes
+    dir: 'infra'
+    env:
+      - 'PULUMI_CONFIG_PASSPHRASE=gcp_fake_passphrase'

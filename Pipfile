@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "==7.2.1"
+pulumi-gcp = "==6.67.0"
+
+[packages]
+
+[requires]
+python_version = "3.11"

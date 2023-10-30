@@ -1,0 +1,8 @@
+steps:
+  - name: pulumi/pulumi-python:3.91.0
+    script: |
+      pulumi stack select main --create
+      pulumi destroy --diff --yes
+    dir: 'infra'
+    env:
+      - 'PULUMI_CONFIG_PASSPHRASE=gcp_fake_passphrase'

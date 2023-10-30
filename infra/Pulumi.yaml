@@ -1,0 +1,6 @@
+name: datasets_tables_pulumi
+runtime:
+  name: python
+backend:
+  url: gs://gb-poc-pulumi-state/main
+description: A minimal Google Cloud Python Pulumi program

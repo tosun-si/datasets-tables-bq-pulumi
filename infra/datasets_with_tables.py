@@ -37,14 +37,6 @@ def get_table_with_partitioning(dataset: Dataset, table: Dict):
     )
 
 
-def get_tables_for_dataset(dataset_id: str, tables: List[Dict]):
-    for table in tables:
-        (
-            get_table_with_partitioning(dataset_id, table) if table.get("partitionType") is not None
-            else get_table(dataset_id, table)
-        )
-
-
 def get_dataset(dataset: Dict):
     dataset_id = dataset["datasetId"]
 

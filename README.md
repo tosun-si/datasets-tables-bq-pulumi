@@ -7,7 +7,7 @@ The link to the article with the use case created with Terraform :
 
 https://medium.com/google-cloud/create-bigquery-datasets-and-tables-with-terraform-in-an-elegant-and-scalable-way-84eab21c1b96
 
-![datasets_with_tables_one_module_terraform.png](images%2Fdatasets_with_tables_one_module_terraform.png)
+![datasets_with_tables_pulumi_python.png](images%2Fdatasets_with_tables_pulumi_python.png)
 
 ## Build from local machine
 

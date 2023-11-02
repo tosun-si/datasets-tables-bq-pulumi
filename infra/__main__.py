@@ -2,8 +2,6 @@ from datasets_with_tables import datasets_with_tables, get_dataset, get_table_wi
     get_table
 
 for dataset in datasets_with_tables:
-    dataset_id = dataset["datasetId"]
-
     bq_dataset = get_dataset(dataset)
 
     for table in dataset["tables"]:
